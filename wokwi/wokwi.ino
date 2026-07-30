@@ -211,7 +211,7 @@ tm.display(1,sec);
 tm.display(0,sec);
 }
 
-// DHT22 : [GND --> GND] [PIN --> D33] [VCC --> 5V]
+// DHT22 : [GND --> GND] [PIN --> D33] [VCC --> 3.3V]
 // GPS : [GND --> GND] [TX --> D3] [RX --> D1] [VCC --> 5V]
 // MQ-X: [PIN --> D35] [GND --> GND] [VCC --> 3.3V]
 // Other Sensor: [PIN --> D34] [GND --> GND] [VCC --> 3.3V]
