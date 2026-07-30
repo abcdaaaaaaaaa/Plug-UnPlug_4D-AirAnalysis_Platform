@@ -177,8 +177,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row['field3'] = ($temp + 140) * 10;
         $row['field4'] = ($rh + 100) * 10;
         $row['field5'] = isset($row['SpaceData200']) ? ($row['SpaceData200'] / 100) * 4095 : 0;
-        $row['field6'] = isset($row['lat']) ? ($row['lat'] + 90) * 10000000 : 0;
-        $row['field7'] = isset($row['lng']) ? ($row['lng'] + 180) * 10000000 : 0;
+        $row['field6'] = isset($row['lat']) ? ($row['lat'] + 90) * pow(10, 7) : 0;
+        $row['field7'] = isset($row['lng']) ? ($row['lng'] + 180) * pow(10, 7) : 0;
         $row['created_at'] = $row['reading_time'] ?? gmdate('Y-m-d\TH:i:s\Z');
         
         $feeds[] = $row;
